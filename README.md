@@ -16,9 +16,13 @@ This is a guide to help you get started in training your own DeepFilters.
 
 3. Run the following command: `. deepfilter-training/install_environment.sh` to setup the environment for DeepFilter training. (installing may take up to an hour or two)
 
-4. Change directory into `texture_nets` via the command `cd texture_nets`, and download a style image using the following command: `wget <url_to_image>`. Later rename the style image file via: `mv <image_filename> style.jpg`.
+4. Change current directory into `texture_nets` via the command `cd texture_nets`.
 
-5. Start training via the command: `th train.lua -data dataset -style_image style.jpg -style_size 600 -image_size 512 -model johnson -batch_size 4 -learning_rate 1e-2 -style_weight 10 -style_layers relu1_2,relu2_2,relu3_2,relu4_2 -content_layers relu4_2`
+5. Download a style image using the following command: `wget <url_to_image>`.
+
+6. Rename the style image file via: `mv <image_filename> style.jpg`.
+
+7. Start training via the command: `th train.lua -data dataset -style_image style.jpg -style_size 600 -image_size 512 -model johnson -batch_size 4 -learning_rate 1e-2 -style_weight 10 -style_layers relu1_2,relu2_2,relu3_2,relu4_2 -content_layers relu4_2`
 
 Training will continue until it hits 50k iterations. You'll find all of your model files under the folder `data/checkpoints`.
 
