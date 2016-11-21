@@ -12,17 +12,19 @@ This is a guide to help you get started in training your own DeepFilters.
 
 1. First of, you'll need a valid AWS account so you can start off by creating an EC2 `p2.xlarge` instance with our AMI image. (`ami-b19aafa6`)
 
-2. Git clone this repository by using the following command: `git clone https://github.com/algorithmiaio/deepfilter-training.git`
+2. SSH into your newly created server using the command: `ssh -i path/to/key.pem ubuntu@<server_public_ip_address>`
 
-3. Run the following command: `. deepfilter-training/install_environment.sh` to setup the environment for DeepFilter training. (installing may take up to an hour or two)
+3. Git clone this repository by using the following command: `git clone https://github.com/algorithmiaio/deepfilter-training.git`
 
-4. Change current directory into `texture_nets` via the command `cd texture_nets`.
+4. Run the following command: `. deepfilter-training/install_environment.sh` to setup the environment for DeepFilter training. (installing may take up to an hour or two)
 
-5. Download a style image using the following command: `wget <url_to_image>`.
+5. Change current directory into `texture_nets` via the command `cd texture_nets`.
 
-6. Rename the style image file via: `mv <image_filename> style.jpg`.
+6. Download a style image using the following command: `wget <url_to_image>`.
 
-7. Start training via the command: `th train.lua -data dataset -style_image style.jpg -style_size 600 -image_size 512 -model johnson -batch_size 4 -learning_rate 1e-2 -style_weight 10 -style_layers relu1_2,relu2_2,relu3_2,relu4_2 -content_layers relu4_2`
+7. Rename the style image file via: `mv <image_filename> style.jpg`.
+
+8. Start training via the command: `th train.lua -data dataset -style_image style.jpg -style_size 600 -image_size 512 -model johnson -batch_size 4 -learning_rate 1e-2 -style_weight 10 -style_layers relu1_2,relu2_2,relu3_2,relu4_2 -content_layers relu4_2`
 
 ![Iteration Example](https://s3.amazonaws.com/algorithmia-assets/github_repo/deepfilter-training/iteration_example.png)
 
