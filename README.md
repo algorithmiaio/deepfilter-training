@@ -1,6 +1,6 @@
 # DeepFilter Training
 
-![DeepFilter Example](http://blog.algorithmia.com/wp-content/uploads/2016/11/gan_vogh_example2.png)
+![DeepFilter Example](https://s3.amazonaws.com/algorithmia-assets/github_repo/deepfilter-training/gan_vogh_example2.png)
 
 [DeepFilter](https://algorithmia.com/algorithms/deeplearning/DeepFilter) is a fun way to convert photos or images into the style of a masterpiece painting, drawing, etc. For instance, you could apply the artistic style of Van Gogh’s Starry Night to an otherwise boring photo of the Grand Canal in Venice, Italy.
 
