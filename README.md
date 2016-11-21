@@ -10,7 +10,7 @@ This is a guide to help you get started in training your own DeepFilters.
 
 ## 1. Training DeepFilter
 
-1. First of, you'll need a valid AWS account so you can start off by creating an EC2 `P2.xlarge` instance with one of our AMI images (one image per region). `P2.xlarge` instances only exists in 3 regions: US-East-1 (Northern Virginia) `ami-b19aafa6`, US-West-2 (Oregon) `ami-5c2e823c` and EU-West-1 (Ireland) `ami-36461b45`.
+1. First of, you'll need a valid AWS account so you can start off by creating an EC2 `P2.xlarge` instance with one of our AMI images (one image per regionA). `P2.xlarge` instances only exist in 3 regions: US-East-1 (Northern Virginia) `ami-b19aafa6`, US-West-2 (Oregon) `ami-5c2e823c` and EU-West-1 (Ireland) `ami-36461b45`.
 
 2. SSH into your newly created server using the command: `ssh -i path/to/key.pem ubuntu@<server_public_ip_address>`
 
