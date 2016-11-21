@@ -24,6 +24,8 @@ This is a guide to help you get started in training your own DeepFilters.
 
 7. Start training via the command: `th train.lua -data dataset -style_image style.jpg -style_size 600 -image_size 512 -model johnson -batch_size 4 -learning_rate 1e-2 -style_weight 10 -style_layers relu1_2,relu2_2,relu3_2,relu4_2 -content_layers relu4_2`
 
+![Iteration Example](https://s3.amazonaws.com/algorithmia-assets/github_repo/deepfilter-training/iteration_example.png)
+
 Training will continue until it hits 50k iterations. You'll find all of your model files under the folder `data/checkpoints`.
 
 **Note:** You may play with the training settings to get different results. For more information regarding parameter optimization, please refer to:
@@ -31,7 +33,6 @@ Training will continue until it hits 50k iterations. You'll find all of your mod
 * [DmitryUlyanov/texture_nets - Documentation](https://github.com/DmitryUlyanov/texture_nets/blob/master/README.md)
 * [DmitryUlyanov/texture_nets - Issues regarding parameters](https://github.com/DmitryUlyanov/texture_nets/issues?utf8=%E2%9C%93&q=is%3Aissue%20is%3Aopen%20parameter).
 
-![Iteration Example](https://s3.amazonaws.com/algorithmia-assets/github_repo/deepfilter-training/iteration_example.png)
 ## 2. Testing DeepFilter
 
 1. Install the Algorithmia client via: `curl -sSf https://raw.githubusercontent.com/algorithmiaio/algorithmia-cli/master/install.sh | bash`
