@@ -3,7 +3,7 @@ echo "    NVIDIA Driver TOS: http://www.nvidia.com/content/DriverDownload-March2
 echo "    NVIDIA CUDA EULA: http://developer.download.nvidia.com/compute/cuda/7.5/Prod/docs/sidebar/EULA.pdf"
 echo "    NVIDIA CUDNN License: https://developer.nvidia.com/rdp/assets/cudnn-65-eula-asset"
 echo "    COCO2014 Image Dataset: http://mscoco.org/terms_of_use/"
-read -p "If you've read and accepted the TOS, EULA and licenses, please enter (y): " -n 1 -r
+read -p "If you've read and accepted the TOS, EULA and licenses, please enter (Y|n): " -n 1 -r
 echo    # (optional) move to a new line
 if [[ $REPLY =~ ^[Yy]$ ]]
 then
