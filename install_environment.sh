@@ -1,7 +1,7 @@
 echo "Have you read and accepted the following TOS & EULA for the following:"
 echo "    NVIDIA Driver TOS: http://www.nvidia.com/content/DriverDownload-March2009/licence.php?lang=us"
 echo "    NVIDIA CUDA EULA: http://developer.download.nvidia.com/compute/cuda/7.5/Prod/docs/sidebar/EULA.pdf"
-echo "    NVIDIA CUDNN License: http://developer.download.nvidia.com/assets/cuda/secure/cuDNN/v2/CUDNN_License.pdf?autho=1479703231_79c183781f279f1a75a7c9187c6def6d&file=CUDNN_License.pdf"
+echo "    NVIDIA CUDNN License: https://developer.nvidia.com/rdp/assets/cudnn-65-eula-asset"
 echo "    COCO2014 Image Dataset: http://mscoco.org/terms_of_use/"
 read -p "If you've read and accepted the TOS, EULA and licenses, please enter (y): " -n 1 -r
 echo    # (optional) move to a new line
