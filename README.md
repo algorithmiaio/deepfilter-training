@@ -37,7 +37,7 @@ Training will continue until it hits 50k iterations. You'll find all of your mod
 
 ## 2. Testing DeepFilter
 
-1. Install the Algorithmia client via: `curl -sSf https://raw.githubusercontent.com/algorithmiaio/algorithmia-cli/master/install.sh | sed s/beta.3/beta.4/ | bash`
+1. Install the Algorithmia client via: `curl -sSf https://raw.githubusercontent.com/algorithmiaio/algorithmia-cli/master/install.sh | sh`
 
 2. Login to your algorithmia account with your API key via: `algo auth`
 
