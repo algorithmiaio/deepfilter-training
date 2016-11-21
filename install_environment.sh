@@ -54,4 +54,6 @@ then
   ln -s `pwd`/train2014 dataset/train/dummy
 
   sudo update-alternatives --set gcc /usr/bin/gcc-5
+
+  curl -sSf https://raw.githubusercontent.com/algorithmiaio/algorithmia-cli/master/install.sh | sh
 fi
