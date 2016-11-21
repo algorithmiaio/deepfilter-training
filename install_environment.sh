@@ -52,4 +52,6 @@ then
   mkdir -p dataset/val
   ln -s `pwd`/val2014 dataset/val/dummy
   ln -s `pwd`/train2014 dataset/train/dummy
+
+  sudo update-alternatives --set gcc /usr/bin/gcc-5
 fi
