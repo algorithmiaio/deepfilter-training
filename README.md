@@ -35,7 +35,7 @@ Training will continue until it hits 50k iterations. You'll find all of your mod
 
 5. Test your new model: `algo run deeplearning/DeepFilter/0.5.x -d {"images": ["data://deeplearning/example_data/elon_musk.jpg"],"savePaths": ["data://.my/DeepFilterTraining/stylized.jpg"],"filterName": "data://.my/DeepFilterTraining/my_model.t7"}`
 
-6. View your stylized image [here](https://algorithmia.com/v1/data/<username>/DeepFilterTraining/stylized.t7): (`https://algorithmia.com/v1/data/<username>/DeepFilterTraining/stylized.t7`) (You need to be logged in, and need to change `<username>` with your login name.)
+6. View your stylized image [here](https://algorithmia.com/v1/data/<username>/DeepFilterTraining/stylized.jpg): (`https://algorithmia.com/v1/data/<username>/DeepFilterTraining/stylized.jpg`) (You need to be logged in, and need to change `<username>` with your login name.)
 
 # Credits
 
