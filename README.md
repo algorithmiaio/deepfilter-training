@@ -26,6 +26,11 @@ This is a guide to help you get started in training your own DeepFilters.
 
 Training will continue until it hits 50k iterations. You'll find all of your model files under the folder `data/checkpoints`.
 
+**Note:** You may play with the training settings to get different results. For more information regarding parameter optimization, please refer to:
+
+* [DmitryUlyanov/texture_nets - Documentation](https://github.com/DmitryUlyanov/texture_nets/blob/master/README.md)
+* [DmitryUlyanov/texture_nets - Issues regarding parameters](https://github.com/DmitryUlyanov/texture_nets/issues?utf8=%E2%9C%93&q=is%3Aissue%20is%3Aopen%20parameter).
+
 ![Iteration Example](https://s3.amazonaws.com/algorithmia-assets/github_repo/deepfilter-training/iteration_example.png)
 ## 2. Testing DeepFilter
 
