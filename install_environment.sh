@@ -26,7 +26,7 @@ then
 
   sudo update-alternatives --set gcc /usr/bin/gcc-4.8
 
-  ./install.sh
+  echo -ne '\n' | ./install.sh
 
   cd ~
 
