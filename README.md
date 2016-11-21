@@ -39,4 +39,4 @@ Training will continue until it hits 50k iterations. You'll find all of your mod
 
 # Credits
 
-TODO
+This guide is based on code provided by: [DmitryUlyanov/texture_nets](https://github.com/DmitryUlyanov/texture_nets).
