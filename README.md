@@ -25,7 +25,17 @@ Training will continue until it hits 50k iterations. You'll find all of your mod
 ![Iteration Example](https://s3.amazonaws.com/algorithmia-assets/github_repo/deepfilter-training/iteration_example.png)
 ## 2. Testing DeepFilter
 
-TODO
+1. Install the Algorithmia client via: `curl -sSf https://raw.githubusercontent.com/algorithmiaio/algorithmia-cli/master/install.sh | bash`
+
+2. Login to your algorithmia account with your API key via: `algo auth`
+
+4. Create a new collection in your account to store your model file via: `algo mkdir .my/DeepFilterTraining`
+
+4. Copy your 50k model file to new collection: `algo cp data/checkpoints/model_50000.t7 data://.my/DeepFilterTraining/my_model.t7`
+
+5. Test your new model: `algo run deeplearning/DeepFilter/0.5.x -d {"images": ["data://deeplearning/example_data/elon_musk.jpg"],"savePaths": ["data://.my/DeepFilterTraining/stylized.jpg"],"filterName": "data://.my/DeepFilterTraining/my_model.t7"}`
+
+6. View your stylized image [here](https://algorithmia.com/v1/data/<username>/DeepFilterTraining/stylized.t7): (`https://algorithmia.com/v1/data/<username>/DeepFilterTraining/stylized.t7`) (You need to be logged in, and need to change `<username>` with your login name.)
 
 # Credits
 
