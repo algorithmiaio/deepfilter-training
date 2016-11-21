@@ -28,7 +28,7 @@ This is a guide to help you get started in training your own DeepFilters.
 
 ![Iteration Example](https://s3.amazonaws.com/algorithmia-assets/github_repo/deepfilter-training/iteration_example.png)
 
-Training will continue until it hits 50k iterations. You'll find all of your model files under the folder `data/checkpoints`.
+Training will continue until it hits 50k iterations (takes up to 24 hrs). You'll find all of your model files under the folder `data/checkpoints`.
 
 **Note:** You may play with the training settings to get different results. For more information regarding parameter optimization, please refer to:
 
