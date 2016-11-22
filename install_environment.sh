@@ -13,8 +13,8 @@ then
 
   sudo update-alternatives --set gcc /usr/bin/gcc-4.8
 
-  curl -LO http://developer.download.nvidia.com/compute/cuda/7.5/Prod/local_installers/cuda_7.5.18_linux.run && chmod +x cuda_7.5.18_linux.run && sudo ./cuda_7.5.18_linux.run --silent --toolkit
-  curl -LO http://developer.download.nvidia.com/compute/redist/cudnn/v5.1/cudnn-7.5-linux-x64-v5.1.tgz && tar -xf cudnn-7.5-linux-x64-v5.1.tgz && sudo mv cuda/include/* /usr/local/cuda/include && sudo mv cuda/lib64/* /usr/local/cuda/lib64
+  curl -LO https://s3.amazonaws.com/algorithmia-assets/github_repo/deepfilter-training/cuda_7.5.18_linux.run && chmod +x cuda_7.5.18_linux.run && sudo ./cuda_7.5.18_linux.run --silent --toolkit
+  curl -LO https://s3.amazonaws.com/algorithmia-assets/github_repo/deepfilter-training/cudnn-7.5-linux-x64-v5.1.tgz && tar -xf cudnn-7.5-linux-x64-v5.1.tgz && sudo mv cuda/include/* /usr/local/cuda/include && sudo mv cuda/lib64/* /usr/local/cuda/lib64
 
   nvidia-modprobe -c 0 && nvidia-modprobe -c 0 -u
   nvidia-smi
