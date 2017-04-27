@@ -1,3 +1,14 @@
+#!/bin/bash
+set -e
+
+# Wait for apt-get to get unlocked
+echo -n "Initializing installation script "
+while sudo fuser /var/lib/dpkg/lock >/dev/null 2>&1; do
+  echo -n "."
+   sleep 1
+done
+echo ""
+
 echo "Have you read and accepted the following TOS & EULA for the following:"
 echo "    NVIDIA Driver TOS: http://www.nvidia.com/content/DriverDownload-March2009/licence.php?lang=us"
 echo "    NVIDIA CUDA EULA: http://developer.download.nvidia.com/compute/cuda/7.5/Prod/docs/sidebar/EULA.pdf"
