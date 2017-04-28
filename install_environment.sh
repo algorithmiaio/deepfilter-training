@@ -1,5 +1,4 @@
 #!/bin/bash
-set -e
 
 # Wait for apt-get to get unlocked
 echo -n "Initializing installation script "
