@@ -1,13 +1,4 @@
 #!/bin/bash
-
-# Wait for apt-get to get unlocked
-echo -n "Initializing installation script "
-while sudo fuser /var/lib/dpkg/lock >/dev/null 2>&1; do
-  echo -n "."
-   sleep 1
-done
-echo ""
-
 echo "Have you read and accepted the following TOS & EULA for the following:"
 echo "    NVIDIA Driver TOS: http://www.nvidia.com/content/DriverDownload-March2009/licence.php?lang=us"
 echo "    NVIDIA CUDA EULA: http://developer.download.nvidia.com/compute/cuda/7.5/Prod/docs/sidebar/EULA.pdf"
@@ -17,6 +8,13 @@ read -p "If you've read and accepted the TOS, EULA and licenses, please enter (Y
 echo    # (optional) move to a new line
 if [[ $REPLY =~ ^[Yy]$ ]]
 then
+  # Wait for apt-get to get unlocked
+  echo -n "Initializing installation script "
+  while sudo fuser /var/lib/dpkg/lock >/dev/null 2>&1; do
+    echo -n "."
+     sleep 1
+  done
+  echo ""
   sudo update-alternatives --install /usr/bin/gcc gcc /usr/bin/gcc-5 150
 
   curl -LO http://us.download.nvidia.com/XFree86/Linux-x86_64/361.28/NVIDIA-Linux-x86_64-361.28.run && chmod +x NVIDIA-Linux-x86_64-361.28.run && sudo ./NVIDIA-Linux-x86_64-361.28.run --silent
