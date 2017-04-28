@@ -154,4 +154,8 @@ then
   sudo update-alternatives --set gcc /usr/bin/gcc-5
 
   curl -sSf https://raw.githubusercontent.com/algorithmiaio/algorithmia-cli/master/install.sh | sh
+
+  # Add cuddn .so files to LD_LIBRARY_PATH
+  export LD_LIBRARY_PATH=/usr/local/cuda/lib64:$LD_LIBRARY_PATH
+  echo "export LD_LIBRARY_PATH=/usr/local/cuda/lib64:$LD_LIBRARY_PATH" >> ~/.bashrc
 fi
