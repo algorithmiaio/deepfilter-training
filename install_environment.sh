@@ -131,6 +131,10 @@ then
 
   git clone https://github.com/DmitryUlyanov/texture_nets.git
 
+  while sudo fuser /var/lib/dpkg/lock >/dev/null 2>&1; do
+    sleep 1
+  done
+
   sudo apt-get install -y --force-yes libprotobuf-dev protobuf-compiler
 
   luarocks install --local loadcaffe
