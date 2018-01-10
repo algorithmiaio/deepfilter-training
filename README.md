@@ -22,7 +22,7 @@ This is a guide to help you get started in training your own DeepFilters.
 
 6. Rename the style image file via: `mv <image_filename> style.jpg`.
 
-7. Start training via the command: `th train.lua -data dataset -style_image style.jpg -style_size 480 -image_size 480 -model johnson -batch_size 4 -learning_rate 1e-2 -style_weight 10 -style_layers relu1_2,relu2_2,relu3_2,relu4_2 -content_layers relu4_2`
+7. Start training via the command: `th train.lua -data dataset -style_image style.jpg -style_size 480 -image_size 480 -model johnson -batch_size 4 -learning_rate 1e-2 -style_weight 10 -style_layers relu1_2,relu2_2,relu3_2,relu4_2 -content_layers relu4_2 -gpu 1`
 
 ![Iteration Example](https://s3.amazonaws.com/algorithmia-assets/github_repo/deepfilter-training/iteration_example.png)
 
