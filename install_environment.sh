@@ -141,6 +141,9 @@ then
 
   cd texture_nets
 
+  # Checkout to older version since model has been slightly changed (Jan 9th 2018)
+  git checkout e4fd939d220afab8da194fd8e318d477a0c55fce
+
   cd data/pretrained && bash download_models.sh && cd ../..
 
   wget http://msvocds.blob.core.windows.net/coco2014/train2014.zip
