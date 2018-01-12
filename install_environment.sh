@@ -33,8 +33,11 @@ then
 
   sudo update-alternatives --set gcc /usr/bin/gcc-5
 
-  git clone https://github.com/torch/distro.git ~/torch --recursive
-  checkAptGet && cd ~/torch; bash install-deps;
+  git clone https://github.com/torch/distro.git ~/torch;
+  checkAptGet && cd ~/torch;
+  git checkout 3fd189488e22c2a2afd351d07e2a2080fa685b1b;
+  git submodule update --init --recursive;
+  bash install-deps;
 
   sudo update-alternatives --set gcc /usr/bin/gcc-4.8
 
