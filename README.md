@@ -1,5 +1,7 @@
 > Warning: The underlying `texture_nets` repository isn't working. The training process is broken until further notice. Sorry for the inconvenience.
 
+> Second Warning: Don't forget to terminate your EC2 instance after you're done. You still get billed for the instance when you don't use it.
+
 # DeepFilter Training
 
 ![DeepFilter Example](https://s3.amazonaws.com/algorithmia-assets/github_repo/deepfilter-training/gan_vogh_example2.png)
