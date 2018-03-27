@@ -1,3 +1,5 @@
+> Warning: The underlying `texture_nets` repository isn't working. The training process is broken until further notice. Sorry for the inconvenience.
+
 # DeepFilter Training
 
 ![DeepFilter Example](https://s3.amazonaws.com/algorithmia-assets/github_repo/deepfilter-training/gan_vogh_example2.png)
